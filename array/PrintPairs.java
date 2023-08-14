@@ -1,6 +1,7 @@
 package array;
 
 public class PrintPairs {
+    // print pairs == num?
 
     public static void printPairs(int[] arr, int num) {
         // Your code goes here
