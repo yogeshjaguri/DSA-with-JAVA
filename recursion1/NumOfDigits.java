@@ -1,4 +1,4 @@
-package TwoDArray;
+package recursion1;
 
 public class NumOfDigits {
 
