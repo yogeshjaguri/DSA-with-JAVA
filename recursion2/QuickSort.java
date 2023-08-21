@@ -51,16 +51,28 @@ public class QuickSort {
     }
 
     public static int partition(int[] input, int start, int end) {
-        int pivot = input[end];
-        int i = start - 1;
-        for (int j = start; j < end; j++) {
-            if (input[j] < pivot) {
-                i++;
-                swap(input, i, j);
+        // int pivot = input[end];
+        // int i = start - 1;
+        // for (int j = start; j < end; j++) {
+        // if (input[j] < pivot) {
+        // i++;
+        // swap(input, i, j);
+        // }
+        // }
+        // swap(input, i + 1, end);
+        // return i + 1;
+
+        // or
+        int pE = input[start];
+        int smallNum = start;
+        for (int i = start + 1; i <= end; i++) {
+            if (input[i] < pE) {
+                smallNum++;
+                swap(input, smallNum, i);
             }
         }
-        swap(input, i + 1, end);
-        return i + 1;
+        swap(input, smallNum, start);
+        return smallNum;
     }
 
     public static void swap(int[] input, int i, int j) {
