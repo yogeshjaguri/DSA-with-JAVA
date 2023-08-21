@@ -1,4 +1,4 @@
-package TwoDArray;
+package recursion2;
 
 public class PrintWave {
 
