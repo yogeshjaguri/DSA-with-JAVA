@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS1.Fraction1;
 
 public class Fraction {
     private int numerator;
