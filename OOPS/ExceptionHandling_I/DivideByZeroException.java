@@ -1,4 +1,4 @@
-package OOPS1.ExceptionHandling_I;
+package OOPS.ExceptionHandling_I;
 
 public class DivideByZeroException extends Exception {
 

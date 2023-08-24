@@ -1,4 +1,4 @@
-package OOPS1.Polymorphism;
+package OOPS.Polymorphism;
 
 public class VehicleUse {
 

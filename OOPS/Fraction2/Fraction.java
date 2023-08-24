@@ -1,4 +1,4 @@
-package OOPS1.Fraction1;
+package OOPS.Fraction2;
 
 public class Fraction {
     private int numerator;
@@ -24,6 +24,21 @@ public class Fraction {
 
     public void print() {
         System.out.println(numerator + "/" + denominator);
+    }
+
+    public void add(Fraction f2) {
+        // First fraction is the fraction on which function is called
+        /// Second fraction is passed as arguments
+        this.numerator = this.numerator * f2.denominator + this.denominator * f2.numerator;
+        this.denominator = this.denominator * f2.denominator;
+        simplify();
+    }
+
+    public static Fraction add(Fraction f1, Fraction f2) {
+        int newNum = f1.numerator * f2.denominator + f1.denominator * f2.numerator;
+        int newDeno = f1.denominator * f2.denominator;
+        Fraction f3 = new Fraction(newNum, newDeno);
+        return f3;
     }
 
 }

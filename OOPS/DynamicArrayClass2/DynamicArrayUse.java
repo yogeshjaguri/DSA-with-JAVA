@@ -1,4 +1,4 @@
-package OOPS1.DynamicArrayClass2;
+package OOPS.DynamicArrayClass2;
 
 import OOPS1.DynamicArrayClass1.DynamicArray;
 

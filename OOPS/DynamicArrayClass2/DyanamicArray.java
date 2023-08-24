@@ -1,4 +1,4 @@
-package OOPS1.DynamicArrayClass2;
+package OOPS.DynamicArrayClass2;
 
 public class DyanamicArray {
     private int data[];

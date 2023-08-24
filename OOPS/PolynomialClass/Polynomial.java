@@ -1,4 +1,4 @@
-package OOPS1.PolynomialClass;
+package OOPS.PolynomialClass;
 
 public class Polynomial {
     int degCoeff[];

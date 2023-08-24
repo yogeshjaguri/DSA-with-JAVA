@@ -1,4 +1,4 @@
-package OOPS1.ComplexNumber;
+package OOPS.ComplexNumber;
 
 import java.util.Scanner;
 

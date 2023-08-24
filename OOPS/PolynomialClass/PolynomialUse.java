@@ -1,4 +1,4 @@
-package OOPS1.PolynomialClass;
+package OOPS.PolynomialClass;
 
 import java.util.Scanner;
 
