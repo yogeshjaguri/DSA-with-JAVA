@@ -1,4 +1,4 @@
-public class MergetwoSortArr {
+public class MergetwoSortLL {
     public static Node<Integer> mergeTwoSorteds(Node<Integer> head1, Node<Integer> head2) {
         // Your code goes here
 
