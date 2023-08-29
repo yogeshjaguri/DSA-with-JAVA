@@ -1,10 +1,8 @@
 package BST;
 
-import BinaryTrees.Improvement on Tree Input.BinaryTreeNode;
-
 public class ElementsBetweenK1AndK2 {
 
-    public static void elementsInRangeK1K2(BinaryTreeNode<Integer> root,int k1,int k2){
+    public static void elementsInRangeK1K2(BinaryTreeNode<Integer> root, int k1, int k2) {
         if (root == null) {
             return;
         }
@@ -19,7 +17,7 @@ public class ElementsBetweenK1AndK2 {
 
         if (root.data < k2) {
             elementsInRangeK1K2(root.right, k1, k2);
-        }		
-	 }
-    
+        }
+    }
+
 }
