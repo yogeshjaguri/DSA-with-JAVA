@@ -56,5 +56,4 @@ public class LargestBST {
                     Math.max(root.data, rightInfo.maxValue));
         }
     }
-
 }
