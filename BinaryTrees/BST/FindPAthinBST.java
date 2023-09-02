@@ -1,4 +1,4 @@
-package BST;
+package BinaryTrees.BST;
 
 import java.util.*;
 

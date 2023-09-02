@@ -1,3 +1,5 @@
+package BinaryTrees.BST;
+
 import java.util.*;
 
 public class ReplacewithSumofGreaterNodes {

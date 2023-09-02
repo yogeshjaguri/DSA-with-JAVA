@@ -1,4 +1,4 @@
-package test4;
+package TESTS.test4;
 
 // Minimum Count
 // Send Feedback

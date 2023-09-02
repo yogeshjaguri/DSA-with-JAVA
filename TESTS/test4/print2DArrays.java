@@ -1,4 +1,4 @@
-package test4;
+package TESTS.test4;
 
 // Given a 2D integer array with n rows and m columns. Print the 0th row from input n times, 1st row n-1 times…..(n-1)th row will be printed 1 time.
 // Input format :

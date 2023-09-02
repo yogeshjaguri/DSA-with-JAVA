@@ -1,4 +1,4 @@
-package BST;
+package BinaryTrees.BST;
 
 public class SearchInBinaryTree {
     public static boolean searchInBST(BinaryTreeNode<Integer> root, int k) {

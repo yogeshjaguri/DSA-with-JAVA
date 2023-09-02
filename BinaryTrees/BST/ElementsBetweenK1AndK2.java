@@ -1,4 +1,4 @@
-package BST;
+package BinaryTrees.BST;
 
 public class ElementsBetweenK1AndK2 {
 
