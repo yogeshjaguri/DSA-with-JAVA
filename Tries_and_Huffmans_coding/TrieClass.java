@@ -2,7 +2,6 @@ package Tries_and_Huffmans_coding;
 
 public class TrieClass {
     class TrieNode {
-
         char data;
         boolean isTerminating;
         TrieNode children[];
@@ -17,9 +16,7 @@ public class TrieClass {
     }
 
     public class Trie {
-
         private TrieNode root;
-        public int count;
 
         public Trie() {
             root = new TrieNode('\0');
@@ -30,7 +27,6 @@ public class TrieClass {
         }
 
         private boolean search(TrieNode root, String word) {
-            // implement this function
             if (word.length() == 0) {
                 return root.isTerminating;
             }
@@ -55,11 +51,32 @@ public class TrieClass {
                 root.childCount++;
             }
             add(child, word.substring(1));
-
         }
 
         public void add(String word) {
             add(root, word);
+        }
+
+        public void remove(String word) {
+            removeHelper(root, word);
+        }
+
+        private void removeHelper(TrieNode root, String word) {
+            if (word.length() == 0) {
+                root.isTerminating = false;
+                return;
+            }
+            int childIndex = word.charAt(0) - 'a';
+            TrieNode child = root.children[childIndex];
+            if (child == null) {
+                return;
+            }
+            removeHelper(child, word.substring(1));
+
+            if (!child.isTerminating && child.childCount == 0) {
+                root.children[childIndex] = null;
+                root.childCount--;
+            }
         }
     }
 
