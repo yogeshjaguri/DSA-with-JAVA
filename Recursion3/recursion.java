@@ -16,7 +16,7 @@ public class recursion {
             output[i] = smallOutput[i];
         }
         for (int i = 0; i < smallOutput.length; i++) {
-            output[i] = input.charAt(0) + smallOutput[i];
+            output[smallOutput.length + i] = input.charAt(0) + smallOutput[i];
         }
         return output;
     }
