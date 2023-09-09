@@ -10,19 +10,39 @@ public class ByteLandian {
     public static long bytelandian(long n, HashMap<Long, Long> memo) {
         // Write your code here
 
-        memo.put(0L, 0L);
-        memo.put(1L, 1L);
+        return bytelandianHelper(n, memo);
+    }
 
-        for (long i = 2; i <= n; i++) {
-            long way1 = memo.getOrDefault(i / 2, i / 2);
-            long way2 = memo.getOrDefault(i / 3, i / 3);
-            long way3 = memo.getOrDefault(i / 4, i / 4);
+    private static long bytelandianHelper(long n, HashMap<Long, Long> memo) {
 
-            long ways = Math.max(i, way1 + way2 + way3);
-            memo.put(i, ways);
+        if (n == 0) {
+            return 0;
+        }
+
+        if (!memo.containsKey(n)) {
+            long way1 = bytelandianHelper(n / 2, memo);
+            long way2 = bytelandianHelper(n / 3, memo);
+            long way3 = bytelandianHelper(n / 4, memo);
+
+            long ways = way1 + way2 + way3;
+            memo.put(n, Math.max(ways, n));
         }
 
         return memo.get(n);
+
+        // memo.put(0L, 0L);
+        // memo.put(1L, 1L);
+
+        // for (long i = 2; i <= n; i++) {
+        // long way1 = memo.getOrDefault(i / 2, i / 2);
+        // long way2 = memo.getOrDefault(i / 3, i / 3);
+        // long way3 = memo.getOrDefault(i / 4, i / 4);
+
+        // long ways = Math.max(i, way1 + way2 + way3);
+        // memo.put(i, ways);
+        // }
+
+        // return memo.get(n);
 
         // long[] dp = new long[(int)(n + 1)];
 
