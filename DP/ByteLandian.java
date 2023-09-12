@@ -1,4 +1,4 @@
-package HashMap;
+package DP;
 
 import java.io.BufferedReader;
 import java.io.IOException;

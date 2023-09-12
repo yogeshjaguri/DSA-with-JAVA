@@ -1,4 +1,4 @@
-package HashMap;
+package DP;
 
 import java.util.*;
 
